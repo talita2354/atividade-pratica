@@ -1,0 +1,35 @@
+.container {  
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 0.4fr 2.2fr 0.4fr;
+    grid-template-rows: 0.1fr 2.7fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header Header"
+      "navigation main related-links"
+      "footer footer footer";
+  }
+ .cabeçalho{
+    text-align: center;
+ }
+  
+  .Header { 
+     background-color: rgb(231, 103, 124);    
+    grid-area: Header; }
+  
+  .navigation {
+    background-color: rgb(235, 235, 13); 
+    grid-area: navigation; }
+  
+  .main { 
+    background-color: rgb(219, 219, 230);
+    grid-area: main; }
+  
+  .related-links { 
+    background-color: brown;
+    grid-area: related-links; }
+  
+  .footer { 
+    background-color: black;
+    grid-area:footer;}
